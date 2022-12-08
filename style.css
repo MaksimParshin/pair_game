@@ -1,0 +1,106 @@
+@import url(./fonts/fonts.css);
+
+.page {
+    margin: 0;
+    padding: 0;
+    background-color: #2A2C2F;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 90px;
+    color: white;
+}
+
+.box {
+    width: 100%;
+    height: calc(100vh - 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 400px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: orange;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    font-size: 80px;
+    font-weight: 900;
+    color: white;
+}
+
+.back {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.front_rotation {
+    transform: rotateY(360deg);
+
+
+}
+
+.back_rotation {
+    transform: rotateY(180deg);
+
+    
+}
+
+.sucsessfuly {
+    background-color: lawngreen;
+    color: #2A2C2F;
+}
+
+.red {
+    background-color: red;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__title {
+    min-height: 300px;
+    text-align: center;
+    color: white;
+    font-size: 90px;
+}
+
+.footer__button {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+}
