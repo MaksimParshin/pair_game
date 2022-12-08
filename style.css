@@ -1,7 +1,8 @@
 @import url(./fonts/fonts.css);
 
 .page {
-    margin: 0;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 0;
     background-color: #2A2C2F;
     font-family: 'Inter', Arial, sans-serif;
@@ -14,11 +15,11 @@
 }
 
 .box {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     height: calc(100vh - 400px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
 
@@ -26,13 +27,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 400px;
     font-size: 30px;
     text-align: center;
     position: relative;
     border-radius: 10px;
-    
+
 }
 
 .front {
@@ -71,7 +70,7 @@
 .back_rotation {
     transform: rotateY(180deg);
 
-    
+
 }
 
 .sucsessfuly {
@@ -84,13 +83,14 @@
 }
 
 .footer {
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer__title {
-    min-height: 300px;
+  
     text-align: center;
     color: white;
     font-size: 90px;
