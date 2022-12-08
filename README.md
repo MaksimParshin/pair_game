@@ -1,3 +1,3 @@
 # Игра в пары 
 
-## Простоая игра на HTML, CSS, и Javascrip.
+## Простоая игра на HTML, CSS, и Javascript.
